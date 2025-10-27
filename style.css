@@ -1,0 +1,158 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ededed;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+:root {
+    --accent-color: #00bcd4;
+    --side-bg: #34495e;
+    --text-color: #333;
+}
+
+.container {
+    width: 900px;
+    max-width: 95%;
+    margin: 40px auto;
+    background-color: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    display: flex;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.side-column {
+    width: 35%;
+    background-color: var(--side-bg);
+    color: white;
+    padding: 25px 20px;
+    box-sizing: border-box;
+}
+
+.side-column h3 {
+    color: var(--accent-color);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 5px;
+    margin-top: 25px;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.side-column p, .side-column li {
+    font-size: 0.95em;
+    margin-bottom: 8px;
+}
+
+.side-column ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.side-column li {
+    padding-left: 18px;
+    position: relative;
+}
+
+.side-column li::before {
+    content: "•";
+    color: var(--accent-color);
+    font-size: 1.2em;
+    position: absolute;
+    left: 0;
+}
+
+.profile-header {
+    text-align: center;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.profile-header h2 {
+    color: white;
+    margin: 5px 0 0 0;
+    font-size: 2em;
+    font-weight: 900;
+}
+
+.profile-header h4 {
+    color: #b0e0e6;
+    margin: 3px 0;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+.profile-pic-placeholder {
+    width: 110px;
+    height: 110px;
+    background: var(--accent-color);
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    border: 4px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: white;
+    overflow: hidden;
+}
+
+.profile-pic-placeholder .profile-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+}
+
+.side-column .personal-details p i {
+    margin-right: 8px;
+    color: var(--accent-color);
+}
+
+.main-content {
+    width: 65%;
+    padding: 35px 40px;
+    box-sizing: border-box;
+}
+
+.main-content h2 {
+    color: var(--text-color);
+    border-bottom: 3px solid var(--accent-color);
+    padding-bottom: 5px;
+    margin-top: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.education-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.education-table th, .education-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.education-table th {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+.main-content .item {
+    margin-bottom: 20px;
+    padding-left: 10px;
+    border-left: 3px solid #eee;
+}
+
+.main-content .item p {
+    margin-top: 0;
+    font-size: 0.95em;
+    color: #555;
+}
